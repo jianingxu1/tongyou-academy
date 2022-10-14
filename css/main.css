@@ -1,0 +1,100 @@
+:root {
+    --darkest-brown: rgb(112, 99, 61);
+    --dark-brown: rgb(141, 125, 76);
+    --brown: rgba(90, 85, 70, 0.351);
+    --light-beige: #f8edd4be;
+    --lightest-beige: #fcf8f4;
+    --beige: beige;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 6vw;
+    background-color: var(--light-beige);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    border-top: 2px rgba(133, 112, 103, 0.801) solid;
+    width: 100%;
+}
+
+nav img {
+    width: 125px;
+    cursor: pointer;
+}
+
+nav .navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .navigation ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav .navigation ul li {
+    list-style: none;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover {
+    color: var(--dark-brown);
+}
+
+nav .navigation ul li a,
+.sign-up,
+.log-in {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav .navigation .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.navigation .buttons .button {
+    border: 2.5px var(--dark-brown) solid;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 2px 14px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.navigation .buttons .sign-up {
+    color: inherit;
+    background-image: var(--lightest-beige);
+}
+
+.navigation .buttons .sign-up:hover,
+.navigation .buttons .sign-up:active {
+    background-image: linear-gradient(white, var(--beige));
+}
+
+.navigation .buttons .log-in {
+    color: white;
+    background-color: var(--darkest-brown);
+}
+
+.navigation .buttons .log-in:hover,
+.navigation .buttons .log-in:active {
+    color: white;
+    background-image: linear-gradient(var(--dark-brown), var(--brown));
+}
