@@ -1,10 +1,11 @@
 :root {
-    --darkest-brown: rgb(112, 99, 61);
-    --dark-brown: rgb(141, 125, 76);
+    --darkest-brown: #4B4B4B;
+    --dark-brown: #BCA574;
     --brown: rgba(90, 85, 70, 0.351);
-    --light-beige: #f8edd4be;
+    --light-beige: #EBE5DB;
     --lightest-beige: #fcf8f4;
     --beige: beige;
+    --border: #CDB564;
 }
 
 h1 {
@@ -17,10 +18,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 6vw;
+    padding: 1vw 4vw;
     background-color: var(--light-beige);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-    border-top: 2px rgba(133, 112, 103, 0.801) solid;
+    border-top: 2px var(--border) solid;
     width: 100%;
 }
 
@@ -73,7 +74,7 @@ nav .navigation .buttons {
     border: 2.5px var(--dark-brown) solid;
     border-radius: 4px;
     cursor: pointer;
-    padding: 2px 14px;
+    padding: 2px 18px;
     transition: 0.3s ease;
     text-decoration: none;
 }
@@ -97,4 +98,39 @@ nav .navigation .buttons {
 .navigation .buttons .log-in:active {
     color: white;
     background-image: linear-gradient(var(--dark-brown), var(--brown));
+}
+
+/* introduction */
+.intro {
+    background-color: rgb(82, 82, 82);
+    background-image: url("../img/background/teaching-keyframe.png");
+    background-size: cover;
+    background-position: top;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.intro .intro-title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+.intro .intro-subtitle {
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 30px;
+}
+
+.intro p {
+    max-width: 400px;
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
