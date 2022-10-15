@@ -6,6 +6,7 @@
     --lightest-beige: #fcf8f4;
     --beige: beige;
     --border: #CDB564;
+    --button: #ECECEC;
 }
 
 h1 {
@@ -70,7 +71,7 @@ nav .navigation .buttons {
     gap: 10px;
 }
 
-.navigation .buttons .button {
+.button {
     border: 2.5px var(--dark-brown) solid;
     border-radius: 4px;
     cursor: pointer;
@@ -81,7 +82,7 @@ nav .navigation .buttons {
 
 .navigation .buttons .sign-up {
     color: inherit;
-    background-image: var(--lightest-beige);
+    background-color: var(--button);
 }
 
 .navigation .buttons .sign-up:hover,
@@ -133,4 +134,50 @@ nav .navigation .buttons {
     margin-top: 10px;
     font-weight: 500;
     letter-spacing: 2px;
+}
+
+/* method */
+.method {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 6vw 10vw;
+    background-color: var(--light-beige);
+}
+
+.method .method-text {
+    max-width: 380px;
+}
+
+.method-text h2 {
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.method-text p {
+    margin-top: 16px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.method .method-text a {
+    border: 2.5px var(--dark-brown) solid;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 20px 18px;
+    transition: 0.3s ease;
+    text-decoration: none; 
+    letter-spacing: 1px;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--button);
+}
+
+.method .method-text a:hover,
+.method .method-text a:active {
+    background-image: linear-gradient(white, var(--beige));
 }
