@@ -2,16 +2,46 @@
     --darkest-brown: #4B4B4B;
     --dark-brown: #BCA574;
     --brown: rgba(90, 85, 70, 0.351);
-    --light-beige: #EBE5DB;
-    --lightest-beige: #fcf8f4;
-    --beige: beige;
-    --border: #CDB564;
-    --button: #ECECEC;
+    --beige-background-color: #EBE4DB;
+    --border-color: #BD9207;
+    --padding-horizontal: 8vw;
+    --padding-vertical: 4vw;
 }
 
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
+}
+
+h2 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 16px;
+}
+
+p {
+    letter-spacing: 1px;
+}
+
+a,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+.button {
+    border: 3px var(--border-color) solid;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 2px 18px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    background-color: #EFEFEF;
+}
+
+.button:hover,
+.button:active {
+    background-image: linear-gradient(white, beige);
 }
 
 /* navigation */
@@ -20,9 +50,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1vw 4vw;
-    background-color: var(--light-beige);
+    background-color: var(--beige-background-color);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
-    border-top: 2px var(--border) solid;
+    border-top: 2px var(--border-color) solid;
+    border-bottom: 1px var(--border-color) solid;
     width: 100%;
 }
 
@@ -71,25 +102,6 @@ nav .navigation .buttons {
     gap: 10px;
 }
 
-.button {
-    border: 2.5px var(--dark-brown) solid;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 2px 18px;
-    transition: 0.3s ease;
-    text-decoration: none;
-}
-
-.navigation .buttons .sign-up {
-    color: inherit;
-    background-color: var(--button);
-}
-
-.navigation .buttons .sign-up:hover,
-.navigation .buttons .sign-up:active {
-    background-image: linear-gradient(white, var(--beige));
-}
-
 .navigation .buttons .log-in {
     color: white;
     background-color: var(--darkest-brown);
@@ -98,7 +110,7 @@ nav .navigation .buttons {
 .navigation .buttons .log-in:hover,
 .navigation .buttons .log-in:active {
     color: white;
-    background-image: linear-gradient(var(--dark-brown), var(--brown));
+    background-image: linear-gradient(var(--dark-brown), rgba(90, 85, 70, 0.351));
 }
 
 /* introduction */
@@ -140,9 +152,8 @@ nav .navigation .buttons {
 .method {
     display: flex;
     justify-content: center;
-    padding: 4vw 8vw;
-    letter-spacing: 1px;
-    background-color: var(--light-beige);
+    padding: var(--padding-vertical) var(--padding-vertical);
+    background-color: var(--beige-background-color);
 }
 
 .method-container {
@@ -164,12 +175,6 @@ nav .navigation .buttons {
 
 .method .method-text {
     max-width: 380px;
-}
-
-.method-text h2 {
-    font-weight: 700;
-    letter-spacing: 5px;
-    margin-bottom: 16px;
 }
 
 .method-text p {
@@ -203,8 +208,7 @@ nav .navigation .buttons {
 
 /* community */
 .community {
-    padding: 4vw 8vw;
-    letter-spacing: 1px;
+    padding: var(--padding-vertical) var(--padding-vertical);
     display: flex;
     justify-content: center;
 }
@@ -221,12 +225,6 @@ nav .navigation .buttons {
     max-width: 450px;
 }
 
-.community h2 {
-    font-weight: 700;
-    letter-spacing: 5px; 
-    margin-bottom: 16px;
-}
-
 /* method2 */
 #roadmap2 {
     width: 500px;
@@ -239,4 +237,31 @@ nav .navigation .buttons {
 
 #method-text-p2 {
     margin-bottom: 0;
+}
+
+/* join */
+.join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-vertical) var(--padding-vertical);
+    background-color: var(--beige-background-color);
+}
+
+.join-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    max-width: 550px;
+    text-align: center;
+}
+
+.join-content h2 {
+    margin-bottom: 0;
+}
+
+.join-content div .sign-up {
+    padding: 10px 30px;
 }
