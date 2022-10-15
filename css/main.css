@@ -140,10 +140,17 @@ nav .navigation .buttons {
 .method {
     display: flex;
     justify-content: center;
+    padding: 4vw 12vw;
+    letter-spacing: 1px;
+    background-color: var(--light-beige);
+}
+
+.method-container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 100px;
-    padding: 6vw 10vw;
-    background-color: var(--light-beige);
+    width: clamp(500px, 80vw, 900px);
 }
 
 .method .method-text {
@@ -153,31 +160,60 @@ nav .navigation .buttons {
 .method-text h2 {
     font-weight: 700;
     letter-spacing: 5px;
+    margin-bottom: 16px;
 }
 
 .method-text p {
-    margin-top: 16px;
-    margin-bottom: 50px;
-    letter-spacing: 1px;
+    margin-bottom: 36px;
+}
+
+.method-button {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .method .method-text a {
-    border: 2.5px var(--dark-brown) solid;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 20px 18px;
-    transition: 0.3s ease;
-    text-decoration: none; 
-    letter-spacing: 1px;
-    color: black;
+    color: inherit;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
-    color: inherit;
+
     background-color: var(--button);
+    border: 2.5px var(--dark-brown) solid;
+    border-radius: 4px;
+    cursor: pointer;
+
+    padding: 20px 18px;
+    transition: 0.3s ease;
 }
 
 .method .method-text a:hover,
 .method .method-text a:active {
     background-image: linear-gradient(white, var(--beige));
+}
+
+/* community */
+.community {
+    padding: 4vw 12vw;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.community-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    width: clamp(500px, 80vw, 900px);
+}
+
+.community-text {
+    max-width: 450px;
+}
+
+.community h2 {
+    font-weight: 700;
+    letter-spacing: 5px; 
+    margin-bottom: 16px;
 }
